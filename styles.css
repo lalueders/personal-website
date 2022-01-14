@@ -1,3 +1,128 @@
-body {
-    background-color: hotpink;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+  }
+
+  html {
+    margin: 0 auto;
+  }
+
+  body {
+    max-width: 1024px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 112.5%;
+    line-height: 1.5;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+
+  header {
+    padding: 10px 0;
+    border-bottom: 1px solid #2e2e2e;
+  }
+
+  h1, h2, h3 {
+    line-height: 1.2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: auto;
+    border-radius: 4px;
+  }
+  
+  .flex-container-head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-box-head {
+    flex-grow: 1;
+  }
+  
+    .main-nav {
+      padding: 4px;
+      display: flex; 
+      gap: 1%;
+      flex-wrap: wrap;
+      justify-content: flex-start; 
+      align-items: flex-start; 
+      align-content: flex-start;
+    }
+  
+    .nav-item {
+      margin: 1px;
+      background-color: #000000;
+      padding: 8px 12px;
+      border-radius: 3px;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0, 30%); 
+      flex-grow: 1;
+      text-align: center;
+    }
+  
+  .flex-container-photo {
+    padding-top: 0.5em;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     align-items: flex-start;
+     gap: 2%;
+  }
+  
+  .flex-box-photo {
+    flex: 1;
+    font-size: 0.8em;
+  }
+  
+  .flex-box-tags {
+    border: 1px solid black;
+    flex: 3;
+    font-size: 0.8em;
+  }
+
+  .flex-box-skills {
+    flex: 3;
+    flex-flow: row wrap;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start;
+  }
+
+  .flex-box-interests {
+    flex: 3;
+    flex-flow: row wrap;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start;
+  }
+ 
+  .tag {
+    background-color: #000000;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: white;
+  }
+
+  li {
+    display: inline;
+    white-space: nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+  }
+
+  a:hover {
+    font-size: 110%;
+  }
