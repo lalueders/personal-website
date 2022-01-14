@@ -6,46 +6,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lasse Lüders</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <header>
-    <h1>Lasse Lüders</h1>
-    <nav>
-      <a href="#contact">Contact</a>
-      <a href="#biography">Biography</a>
+  <header class="flex-container-head">
+    <h1 class="flex-box-head">Lasse Lüders</h1>
+    <nav class="main-nav flex-box-head">
+      <a href="#aboutme" class="nav-item">About Me</a>
+      <a href="#biography" class="nav-item">Biography</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </nav>
-  </header>
-  <figure>
-  <img src="https://source.unsplash.com/random/600x300" alt="">
-  <figcaption>This is my fantastic Header Image! In the future this could be an image of me or my workspace.</figcaption>
+</header>
+
+
+<section class="flex-container-photo">
+  <figure class="flex-box-photo">
+        <img src="https://avatars.githubusercontent.com/u/97477326?v=4" width="300" height="300">
+    <figcaption>
+Hi, I'm Lasse! Thank's for visiting my site! If you like what you see, go on and leave me a message!
+  </figcaption>
   </figure>
-  <section>
-    <h2>Skills</h2>
+  <div class="flex-box-tags">
+  <article class="flex-box-skills">
+      <h3>Skills:</h3>
+      <ul>
+        <li class="tag">CRM</li>
+        <li class="tag">Marketing Automation</li>
+        <li class="tag">E-Mail Marketing</li>
+        <li class="tag">Customer Success</li>
+        <li class="tag">Retention & Churn Prevention</li>
+      </ul>
+  </article>
+  <article class="flex-box-interests">
+    <h3>Interests:</h3>
     <ul>
-      <li>CRM</li>
-      <li>Marketing Automation</li>
-      <li>E-Mail Marketing</li>
-      <li>Customer Success</li>
-      <li>Retention & Churn Prevention</li>
+      <li class="tag">Web Development</li>
+      <li class="tag">Frontend</li>
+      <li class="tag">Backend</li>
+      <li class="tag">Design</li>
+      <li class="tag">Frameworks</li>
     </ul>
-  </section>
-  <section>
-    <h2>Interests</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Frontend</li>
-      <li>Backend</li>
-      <li>Frameworks</li>
-      <li>Design</li>
-    </ul>
-  </section>
-  <section id="Contact">
-    <h2>Contact</h2>
-  </section>
+</article>
+</div>
+</section>
+
+
+
+
   <section id="biography">
-    <h2>Biography</h2>
+    <article>
+ 
+    </article>
   </section>
+
+  <section id="Contact">
+  </section>
+
+  <footer>
+  </footer>
+
 </body>
 
 </html>
