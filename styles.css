@@ -39,11 +39,19 @@
   li {
     display: inline;
   }
-  
-  a:hover {
-    background-color: rgb(51, 51, 51);
-    text-decoration: underline;
+
+  table {
+    table-layout: auto;
+    width: 100%;
   }
+
+  td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+  }
+
+
 
   .flex-container-head {
     border: 1px solid black;
@@ -61,18 +69,24 @@
     justify-content: flex-start; /* start */
     align-items: flex-start; /* default is "stretch" */
     align-content: flex-start;
+    
   }
+  
+  .main-nav > a:hover {
+      background-color: rgb(51, 51, 51);
+      text-decoration: underline;
+    }
   
   .nav-item {
     margin: 1px;
     background-color: #000000;
-    padding: 8px 12px;
+    padding: 0.4em 3em;
     border-radius: 3px;
     color: white;
     box-shadow: 0 4px 6px rgba(0,0,0, 30%); 
     flex-grow: 1;
     text-align: center;
-    }
+  }
   
   .flex-box-profile {
       margin-top: 10px;
@@ -83,26 +97,86 @@
       gap: 1em;
       padding: 1em;
     
-    }
-    .flex-box-profile-item-1 {
-      flex: 1 1 0%;
-      border: 1px solid black;
-      padding: 1em;
+  }
+
+  .flex-box-profile-item-1 {
+    flex: 1 1 0%;
+    border: 1px solid black;
+    padding: 1em;
+  
+  }
+  .flex-box-profile-item-2 {
+    flex: 2 1 0%;
+    border: 1px solid black;
+    padding: 1em;
     
-    }
-    .flex-box-profile-item-2 {
-      flex: 2 1 0%;
-      border: 1px solid black;
-      padding: 1em;
-     
-    }
-    
-    .flex-item-tag {
-      padding: 6px 10px;
-      background-color: #000000;
-      color: white;
-      border-radius: 3px;
-      text-align: center;
-      white-space: nowrap;
-      line-height: 2.3;
-    }
+  }
+  
+  .flex-item-tag > li {
+    padding: 6px 10px;
+    background-color: #2E2E2E;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 2.3;
+  }
+
+  .flex-box-cv {
+    margin-top: 10px;
+    padding: 1em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .flex-box-cv-item-1 {
+    border: 1px solid black;
+    flex: 1 1 0%;
+    padding: 1em;
+  }
+
+  .flex-box-cv-item-2 {
+    border: 1px solid black;
+    flex: 2 1 0%;
+    padding: 1em;
+  }
+
+  .flex-box-cv-item-1 > h3 {
+    padding-bottom: 1em;
+  }
+
+  .flex-box-cv-item-2 > h3 {
+    padding-bottom: 1em
+  }
+
+  .flex-box-contact {
+    margin-top: 10px;
+    padding: 3em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4em;
+  }
+  
+  .flex-item-contact {
+    text-align: center;
+    color: black;
+  }
+  
+  .flex-box-contact > a:hover {
+    border-radius: 0;
+    background-color: rgb(224, 224, 224);
+    text-decoration: underline;
+    color: black;
+  }
+
+  .flex-item-contact > img {
+    width: 100px;
+  }
+  
+  
