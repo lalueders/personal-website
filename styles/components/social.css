@@ -1,0 +1,26 @@
+.social {
+  margin-top: 1em;
+  padding: 2em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+.social-item {
+  text-align: center;
+  color: black;
+}
+
+.social > a:hover {
+  border-radius: 0;
+  background-color: rgb(224, 224, 224);
+  text-decoration: underline;
+  color: black;
+}
+
+.social__img {
+  width: 100px;
+}
