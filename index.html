@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasse Lüders</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -13,17 +13,17 @@
   </head>
 
   <body>
-    <header class="flex-container-head">
-      <h1>Lasse Lüders</h1>
+    <header class="header container">
+      <h1 class="header__name">Lasse Lüders</h1>
       <nav class="main-nav">
-        <a href="#aboutme" class="nav-item">About Me</a>
-        <a href="#biography" class="nav-item">Biography</a>
-        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#aboutme" class="main-nav-item">About Me</a>
+        <a href="#biography" class="main-nav-item">Biography</a>
+        <a href="#contact" class="main-nav-item">Contact</a>
       </nav>
     </header>
     <main>
-      <section class="flex-box-profile">
-        <figure class="flex-box-profile-item-1">
+      <section class="profile container">
+        <figure class="profile__img">
           <img
             src="https://avatars.githubusercontent.com/u/97477326?v=4"
             width="300"
@@ -34,10 +34,10 @@
             see, go on and leave me a message!
           </figcaption>
         </figure>
-        <div class="flex-box-profile-item-2">
+        <div class="profile__list">
           <h2>Skills:</h2>
           <article>
-            <ul class="flex-item-tag">
+            <ul class="profile__list-item">
               <li>CRM</li>
               <li>Online Marketing</li>
               <li>E-Mail Marketing</li>
@@ -48,7 +48,7 @@
           </article>
           <h2>Interests:</h2>
           <article>
-            <ul class="flex-item-tag">
+            <ul class="profile__list-item">
               <li>Web Development</li>
               <li>Digital Products</li>
               <li>Frontend</li>
@@ -60,82 +60,97 @@
           </article>
         </div>
       </section>
-      <section class="flex-box-cv">
-        <article id="aboutme" class="flex-box-cv-item-1">
-          <h2>About Me:</h2>
-          <p>
-            I started my bootcamp at neuefische in January, 2022. This is my
-            first project after one week of coding. I hope I can start as a web
-            develober after my graduation. I am already able to customize this
-            layout and add more professional stations to my CV. If you want to
-            support me on my way to become a web developer, please contact me!
-          </p>
-        </article>
-        <article id="biography" class="flex-box-cv-item-2">
-          <h2>CV:</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>03/2021 - 12/2021</td>
-                <td>
-                  <strong>LichtBlick SE</strong>
-                  <br />
-                  CRM Campaign Manager
-                </td>
-              </tr>
-              <tr>
-                <td>10/2018 - 02/2021</td>
-                <td>
-                  <strong>LemonSwan GmbH</strong>
-                  <br />
-                  Head of CRM
-                </td>
-              </tr>
-              <tr>
-                <td>04/2018 - 09/2018</td>
-                <td>
-                  <strong>Surfmedia GmbH</strong>
-                  <br />
-                  Head of CRM
-                </td>
-              </tr>
-              <tr>
-                <td>10/2016 - 03/2018</td>
-                <td>
-                  <strong>XING SE</strong>
-                  <br />
-                  CRM Manager
-                </td>
-              </tr>
-              <tr>
-                <td>07/2007 - 03/2015</td>
-                <td>
-                  <strong>Elitepartner.de</strong>
-                  <br />
-                  Teamlead Customer Success
-                </td>
-              </tr>
-            </tbody>
-
-            <tbody></tbody>
-          </table>
-        </article>
-      </section>
-      <section class="contact">
+      <div class="about-me-cv-wrapper">
+        <section class="about-me-container">
+          <article id="aboutme" class="about-me">
+            <h2 class="about-me-heading">About Me:</h2>
+            <p>
+              I started my bootcamp at neuefische in January, 2022. This is my
+              first project after one week of coding. I hope I can start as a
+              web develober after my graduation. I am already able to customize
+              this layout and add more professional stations to my CV. If you
+              want to support me on my way to become a web developer, please
+              contact me!
+            </p>
+          </article>
+        </section>
+        <div class="cv-container">
+          <section id="biography">
+            <h2 class="cv-heading">CV:</h2>
+            <article>
+              <dl class="cv">
+                <div class="cv-when">
+                  <dt>03/2021 - 12/2021</dt>
+                </div>
+                <div class="cv-where">
+                  <dd class="cv-company">LichtBlick SE</dd>
+                  <dd class="cv-position">CRM Campaign Manager</dd>
+                </div>
+              </dl>
+            </article>
+            <article>
+              <dl class="cv">
+                <div class="cv-when">
+                  <dt>03/2021 - 12/2021</dt>
+                </div>
+                <div class="cv-where">
+                  <dd class="cv-company">LemonSwan GmbH</dd>
+                  <dd class="cv-position">Head of CRM</dd>
+                </div>
+              </dl>
+            </article>
+            <article>
+              <dl class="cv">
+                <div class="cv-when">
+                  <dt>03/2021 - 12/2021</dt>
+                </div>
+                <div class="cv-where">
+                  <dd class="cv-company">Surfmedia GmbH</dd>
+                  <dd class="cv-position">Head of CRM</dd>
+                </div>
+              </dl>
+            </article>
+            <article>
+              <dl class="cv">
+                <div class="cv-when">
+                  <dt>03/2021 - 12/2021</dt>
+                </div>
+                <div class="cv-where">
+                  <dd class="cv-company">XING SE</dd>
+                  <dd class="cv-position">CRM Manager</dd>
+                </div>
+              </dl>
+            </article>
+            <article>
+              <dl class="cv">
+                <div class="cv-when">
+                  <dt>03/2021 - 12/2021</dt>
+                </div>
+                <div class="cv-where">
+                  <dd class="cv-company">Elitepartner.de</dd>
+                  <dd class="cv-position">Teamlead Customer Success</dd>
+                </div>
+              </dl>
+            </article>
+          </section>
+        </div>
+      </div>
+      <section class="contact-wrapper">
         <h2>Contact:</h2>
-        <div class="flex-box-contact">
-          <p class="flex-item-contact">
+        <div class="contact-container">
+          <p class="contact-box">
             <strong>E-Mail: </strong>lasselueders@tempr.mail
           </p>
-          <p class="flex-item-contact">
+          <p class="contact-box">
             <strong>Phone: </strong>+49&nbsp;1577&nbsp;XXX&nbsp;XXX&nbsp;XX
           </p>
         </div>
       </section>
-      <section id="contact" class="flex-box-social">
+      <section id="contact" class="social">
         <a href="https://github.com/lalueders" target="_blank">
-          <figure class="flex-item-social">
+          <figure class="social-item">
             <img
+              class="social__img"
               src="https://www.kindpng.com/picc/m/255-2558173_github-logo-png-transparent-png.png"
               alt=""
               width="100"
@@ -145,8 +160,9 @@
           </figure>
         </a>
         <a href="https://codepen.io/lalueders" target="_blank">
-          <figure class="flex-item-social">
+          <figure class="social-item">
             <img
+              class="social__img"
               src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703542/Button-Black-Large/Button-Black-Large-png?_i=AA"
               alt=""
               width="100"
@@ -156,8 +172,9 @@
           </figure>
         </a>
         <a href="https://codepen.io/lalueders" target="_blank">
-          <figure class="flex-item-social">
+          <figure class="social-item">
             <img
+              class="social__img"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
               alt=""
               width="100"

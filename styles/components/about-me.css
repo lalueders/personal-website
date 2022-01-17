@@ -1,0 +1,18 @@
+.about-me-container {
+  flex: 1 1 0;
+  padding: 1em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-me-heading {
+  margin-bottom: 0.5em;
+}
+
+.about-me {
+  border: 1px solid black;
+  flex: 1 1 0%;
+  padding: 1em;
+}
