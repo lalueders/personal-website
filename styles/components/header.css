@@ -3,8 +3,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-bottom: 1px solid #2e2e2e;
+  }
 }
 
 .header__name {
   color: var(--color-dark);
+  line-height: 1.2;
 }

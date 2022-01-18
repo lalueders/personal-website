@@ -26,3 +26,18 @@
   white-space: nowrap;
   line-height: 2.3;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  min-width: 10em;
+  border-radius: 3px;
+}
+
+ul {
+  padding: 0.5em;
+}
+
+li {
+  display: inline;
+}
