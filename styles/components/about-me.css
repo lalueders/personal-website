@@ -1,4 +1,4 @@
-.about-me-container {
+.about-me__container {
   flex: 1 1 0;
   padding: 1em;
   border: 1px solid black;
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.about-me-heading {
+.about-me__heading {
   margin-bottom: 0.5em;
 }
 
@@ -15,4 +15,12 @@
   border: 1px solid black;
   flex: 1 1 0%;
   padding: 1em;
+}
+
+.about-me-cv-wrapper {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
 }

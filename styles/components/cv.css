@@ -1,10 +1,10 @@
-.cv-container {
+.cv__container {
   flex: 2 1 0%;
   padding: 1em;
   border: 1px solid black;
 }
 
-.cv-heading {
+.cv__heading {
   margin-bottom: 0.5em;
 }
 
@@ -21,22 +21,22 @@
   gap: 0;
 }
 
-.cv-when {
+.cv__when {
   padding: 0 1em;
   flex: 1 1 0%;
   text-align: center;
 }
 
-.cv-where {
+.cv__where {
   padding: 0 1em;
   flex: 3 1 0%;
   text-align: center;
 }
 
-.cv-position {
+.cv__position {
   color: black;
 }
 
-.cv-company {
+.cv__company {
   font-weight: 600;
 }

@@ -1,4 +1,4 @@
-.social {
+.social__container {
   margin-top: 1em;
   padding: 2em;
   border: 1px solid black;
@@ -9,9 +9,13 @@
   gap: 4em;
 }
 
-.social-item {
+.social__item {
   text-align: center;
   color: black;
+}
+
+.social__img {
+  width: 100px;
 }
 
 .social > a:hover {
@@ -19,8 +23,4 @@
   background-color: rgb(224, 224, 224);
   text-decoration: underline;
   color: black;
-}
-
-.social__img {
-  width: 100px;
 }

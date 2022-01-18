@@ -16,9 +16,9 @@
     <header class="header container">
       <h1 class="header__name">Lasse Lüders</h1>
       <nav class="main-nav">
-        <a href="#aboutme" class="main-nav-item">About Me</a>
-        <a href="#biography" class="main-nav-item">Biography</a>
-        <a href="#contact" class="main-nav-item">Contact</a>
+        <a href="#aboutme" class="main-nav__item">About Me</a>
+        <a href="#biography" class="main-nav__item">Biography</a>
+        <a href="#contact" class="main-nav__item">Contact</a>
       </nav>
     </header>
     <main>
@@ -63,7 +63,7 @@
       <div class="about-me-cv-wrapper">
         <section class="about-me-container">
           <article id="aboutme" class="about-me">
-            <h2 class="about-me-heading">About Me:</h2>
+            <h2 class="about-me__heading">About Me:</h2>
             <p>
               I started my bootcamp at neuefische in January, 2022. This is my
               first project after one week of coding. I hope I can start as a
@@ -74,81 +74,81 @@
             </p>
           </article>
         </section>
-        <div class="cv-container">
+        <div class="cv__container">
           <section id="biography">
-            <h2 class="cv-heading">CV:</h2>
+            <h2 class="cv__heading">CV:</h2>
             <article>
               <dl class="cv">
-                <div class="cv-when">
+                <div class="cv__when">
                   <dt>03/2021 - 12/2021</dt>
                 </div>
-                <div class="cv-where">
-                  <dd class="cv-company">LichtBlick SE</dd>
-                  <dd class="cv-position">CRM Campaign Manager</dd>
+                <div class="cv__where">
+                  <dd class="cv__company">LichtBlick SE</dd>
+                  <dd class="cv__position">CRM Campaign Manager</dd>
                 </div>
               </dl>
             </article>
             <article>
               <dl class="cv">
-                <div class="cv-when">
+                <div class="cv__when">
                   <dt>03/2021 - 12/2021</dt>
                 </div>
-                <div class="cv-where">
-                  <dd class="cv-company">LemonSwan GmbH</dd>
-                  <dd class="cv-position">Head of CRM</dd>
+                <div class="cv__where">
+                  <dd class="cv__company">LemonSwan GmbH</dd>
+                  <dd class="cv__position">Head of CRM</dd>
                 </div>
               </dl>
             </article>
             <article>
               <dl class="cv">
-                <div class="cv-when">
+                <div class="cv__when">
                   <dt>03/2021 - 12/2021</dt>
                 </div>
-                <div class="cv-where">
-                  <dd class="cv-company">Surfmedia GmbH</dd>
-                  <dd class="cv-position">Head of CRM</dd>
+                <div class="cv__where">
+                  <dd class="cv__company">Surfmedia GmbH</dd>
+                  <dd class="cv__position">Head of CRM</dd>
                 </div>
               </dl>
             </article>
             <article>
               <dl class="cv">
-                <div class="cv-when">
+                <div class="cv__when">
                   <dt>03/2021 - 12/2021</dt>
                 </div>
-                <div class="cv-where">
-                  <dd class="cv-company">XING SE</dd>
-                  <dd class="cv-position">CRM Manager</dd>
+                <div class="cv__where">
+                  <dd class="cv__company">XING SE</dd>
+                  <dd class="cv__position">CRM Manager</dd>
                 </div>
               </dl>
             </article>
             <article>
               <dl class="cv">
-                <div class="cv-when">
+                <div class="cv__when">
                   <dt>03/2021 - 12/2021</dt>
                 </div>
-                <div class="cv-where">
-                  <dd class="cv-company">Elitepartner.de</dd>
-                  <dd class="cv-position">Teamlead Customer Success</dd>
+                <div class="cv__where">
+                  <dd class="cv__company">Elitepartner.de</dd>
+                  <dd class="cv__position">Teamlead Customer Success</dd>
                 </div>
               </dl>
             </article>
           </section>
         </div>
       </div>
-      <section class="contact-wrapper">
+      <section id="contact" class="contact__container">
         <h2>Contact:</h2>
-        <div class="contact-container">
-          <p class="contact-box">
+        <div class="contact">
+          <p class="contact__item">
             <strong>E-Mail: </strong>lasselueders@tempr.mail
           </p>
-          <p class="contact-box">
+          <p class="contact__item">
             <strong>Phone: </strong>+49&nbsp;1577&nbsp;XXX&nbsp;XXX&nbsp;XX
           </p>
         </div>
       </section>
-      <section id="contact" class="social">
+      <section class="social__container">
         <a href="https://github.com/lalueders" target="_blank">
-          <figure class="social-item">
+          <figure class="social__item">
             <img
               class="social__img"
               src="https://www.kindpng.com/picc/m/255-2558173_github-logo-png-transparent-png.png"
@@ -160,7 +160,7 @@
           </figure>
         </a>
         <a href="https://codepen.io/lalueders" target="_blank">
-          <figure class="social-item">
+          <figure class="social__item">
             <img
               class="social__img"
               src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703542/Button-Black-Large/Button-Black-Large-png?_i=AA"
@@ -172,7 +172,7 @@
           </figure>
         </a>
         <a href="https://codepen.io/lalueders" target="_blank">
-          <figure class="social-item">
+          <figure class="social__item">
             <img
               class="social__img"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
