@@ -1,5 +1,6 @@
 .cv__container {
   flex: 2 1 0%;
+  flex-wrap: wrap;
   padding: 1em;
   border: 1px solid black;
 }
